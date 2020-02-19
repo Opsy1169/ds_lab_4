@@ -91,6 +91,7 @@ def read_data_from_file():
         oil.append(float(splitted_line[10]))
         loc.append(splitted_line[2])
         size.append(float(splitted_line[8]))
+    file.close()
     return np.array(protein), np.array(oil), np.array(size), np.array(loc)
 
 
